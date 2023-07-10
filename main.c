@@ -6,7 +6,7 @@
 double myRoot(double x) { // fix return type
     // fix y's type
     double y;
-    if (x <= 0) {
+    if (x < 0) { // Fix condition
         exit(1);
     }
     y = sqrt(x);
