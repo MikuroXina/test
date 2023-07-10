@@ -15,7 +15,8 @@ double myRoot(double x) { // fix return type
 
 int main(void) {
     int i = 0; // fix to init with zero
-    double *x = (double *)malloc(sizeof(double) * 100);
+    double *x =
+        (double *)malloc(sizeof(double) * 101); // Fix to allocate until 100
 
     while (i <= 100) {
         x[i] = myRoot((double)i);
