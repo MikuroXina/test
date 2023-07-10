@@ -13,7 +13,7 @@ int myRoot(double x) {
 }
 
 int main(void) {
-    int i;
+    int i = 0; // fix to init with zero
     double *x = (double *)malloc(sizeof(double) * 100);
 
     while (i <= 100) {
