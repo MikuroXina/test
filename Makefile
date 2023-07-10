@@ -1,6 +1,5 @@
 TARGET = main
 SRCS = main.c
-OBJS = $(SRCS:.c=.o)
 CC = gcc
 CFLAGS = -Wall -O
 LIBS = -lm
@@ -11,4 +10,4 @@ $(TARGET): $(SRCS)
 all: clean $(TARGET)
 
 clean:
-	rm main *~
+	rm $(TARGET)
